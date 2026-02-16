@@ -1,0 +1,383 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Background */
+body {
+    background: url("calculator-bg.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8;
+}
+
+/* ================= TOP HEADER (BLUE) ================= */
+.top-header {
+    background-color: #0066a1;
+    color: white;
+    padding: 20px 40px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.zra-logo {
+    height: 70px;
+    width: auto;
+}
+
+.top-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: opacity 0.3s;
+}
+
+.top-nav a:hover {
+    opacity: 0.8;
+}
+
+/* ================= SECONDARY NAVIGATION (GOLD/TAN) ================= */
+.secondary-nav {
+    background-color: #c9a961;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.secondary-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s;
+}
+
+.secondary-nav a:hover {
+    opacity: 0.8;
+}
+
+/* ================= MAIN SECTION ================= */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Calculator Container */
+.calculator-container {
+    background-color: white;
+    width: 700px;
+    max-width: 95%;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Calculator Title */
+.calculator-title {
+    background-color: #e8e8e8;
+    padding: 25px 30px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+    flex: 0 0 200px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    max-width: 400px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0066a1;
+}
+
+/* Result Rows */
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 15px;
+}
+
+.result-row span:first-child {
+    font-weight: 600;
+    color: #333;
+}
+
+.result-row span:last-child {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Net Salary Box */
+.net-salary-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #e8e8e8;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* Tax Bands Section */
+.tax-bands-section {
+    padding: 30px;
+    background-color: white;
+}
+
+.tax-bands-section h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Tax Table */
+.tax-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.tax-table thead {
+    background-color: #f5f5f5;
+}
+
+.tax-table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 13px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.tax-table td {
+    padding: 12px;
+    font-size: 13px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.tax-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.tax-note {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Clear Button */
+button {
+    padding: 12px 40px;
+    background-color: #0066a1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d7a;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #0066a1;
+    color: white;
+    padding: 40px 40px 20px 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto 30px auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.contact-item i {
+    margin-top: 3px;
+    font-size: 16px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+}
+
+.social-icons-bottom {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons-bottom a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: opacity 0.3s;
+}
+
+.social-icons-bottom a:hover {
+    opacity: 0.7;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .top-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .secondary-nav {
+        gap: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .form-group label {
+        flex: none;
+    }
+
+    .form-group input {
+        width: 100%;
+        max-width: 100%;
+    }
+}

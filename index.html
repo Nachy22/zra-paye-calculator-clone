@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYE Calculator - Zambia Revenue Authority</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Blue Header -->
+    <header class="top-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="https://www.zra.org.zm/wp-content/uploads/2023/09/ZRA-logo-01.png" alt="ZRA Logo" class="zra-logo">
+            </div>
+            <nav class="top-nav">
+                <a href="#">About Us</a>
+                <a href="#">Tax Payer Charter</a>
+                <a href="#">Tenders</a>
+                <a href="#">Careers</a>
+                <a href="#">Tutorials</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Secondary Gold Navigation -->
+    <nav class="secondary-nav">
+        <a href="index.html">HOME</a>
+        <a href="#">REGISTRATIONS</a>
+        <a href="#">BUSINESS</a>
+        <a href="#">CUSTOMS</a>
+        <a href="#">PUBLICATIONS</a>
+        <a href="#">STATISTICS</a>
+        <a href="#">TAX PORTAL</a>
+        <a href="#">TAX TOOLS</a>
+        <a href="#">SMART INVOICE</a>
+        <a href="#">TAXPAYER RELATIONS</a>
+    </nav>
+
+    <!-- Main Calculator Section -->
+    <main>
+        <div class="calculator-container">
+            <div class="calculator-title">
+                Paye Calculator
+            </div>
+
+            <!-- Basic Pay -->
+            <div class="form-group">
+                <label for="basicPay">Basic Pay</label>
+                <input type="number" id="basicPay" placeholder="Enter Salary">
+            </div>
+
+            <!-- Allowances -->
+            <div class="form-group">
+                <label for="allowances">Allowances</label>
+                <input type="number" id="allowances" placeholder="Enter allowances">
+            </div>
+
+            <!-- Gross/Taxable Pay -->
+            <div class="result-row">
+                <span>Gross/Taxable Pay</span>
+                <span id="grossPay">K 0</span>
+            </div>
+
+            <!-- Statutory Contribution -->
+            <div class="form-group">
+                <label for="statutory">Statutory Contribution</label>
+                <input type="number" id="statutory" placeholder="Enter allowances">
+            </div>
+
+            <!-- Napsa 5% -->
+            <div class="result-row">
+                <span>Napsa 5%</span>
+                <span id="napsa">K 0</span>
+            </div>
+
+            <!-- NHIMA 1% -->
+            <div class="result-row">
+                <span>NHIMA 1%</span>
+                <span id="nhima">K 0</span>
+            </div>
+
+            <!-- Total Contributions -->
+            <div class="result-row">
+                <span>Total Contributions</span>
+                <span id="totalContributions">K 0</span>
+            </div>
+
+            <!-- Total Tax Deductions -->
+            <div class="result-row">
+                <span>Total Tax Deductions</span>
+                <span id="totalTaxDeductions">K 0</span>
+            </div>
+
+            <!-- Total Deductions -->
+            <div class="result-row">
+                <span>Total Deductions</span>
+                <span id="totalDeductions">K 0</span>
+            </div>
+
+            <!-- Net Salary -->
+            <div class="net-salary-box">
+                <span>Net Salary</span>
+                <span id="netSalary">K 0</span>
+            </div>
+
+            <!-- Tax Bands Table -->
+            <div class="tax-bands-section">
+                <h3>PAYE TAX COMPUTATION BANDS 2026</h3>
+                <table class="tax-table">
+                    <thead>
+                        <tr>
+                            <th>Tax Bands</th>
+                            <th>Chargeable Income</th>
+                            <th>Tax Rate</th>
+                            <th>Tax Due</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First K5,100.00 @</td>
+                            <td id="band1Income">0</td>
+                            <td>0%</td>
+                            <td id="band1Tax">0</td>
+                        </tr>
+                        <tr>
+                            <td>Next K5,100.01 but not exceeding K7,100.00</td>
+                            <td id="band2Income">0</td>
+                            <td>20%</td>
+                            <td id="band2Tax">0</td>
+                        </tr>
+                        <tr>
+                            <td>Next K7,100.01 but not exceeding K9,200.00</td>
+                            <td id="band3Income">0</td>
+                            <td>30%</td>
+                            <td id="band3Tax">0</td>
+                        </tr>
+                        <tr>
+                            <td>K9,200.01 and Above</td>
+                            <td id="band4Income">0</td>
+                            <td>37%</td>
+                            <td id="band4Tax">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="tax-note">Note: Gross pay shows the tax band category used to calculate your tax</p>
+            </div>
+
+            <!-- Clear Button -->
+            <div style="text-align:center; margin-top:20px;">
+                <button id="clearBtn">Clear</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Contact Us Section -->
+            <section class="footer-section">
+                <h3>CONTACT US</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Plot No 1704 Kalambo Road / Villa Elizabetha, Lusaka</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>4111</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>advice@zra.org.zm</span>
+                </div>
+            </section>
+
+            <!-- Other Links Section -->
+            <section class="footer-section">
+                <h3>OTHER LINKS</h3>
+                <ul>
+                    <li>Buy Insurance</li>
+                    <li>National Pension Scheme Authority</li>
+                    <li>Bank of Zambia (BOZ)</li>
+                    <li>Patent and Company Registration Agency</li>
+                    <li>Ministry of Finance</li>
+                    <li>Ministry of Commerce Trade and Industry</li>
+                    <li>Zambia Trade Portal</li>
+                    <li>Zambia Development Agency</li>
+                    <li>Common Market for Eastern and Southern Africa</li>
+                    <li>World Customs Organisation</li>
+                    <li>World Trade Organisation</li>
+                    <li>Southern African Development Community</li>
+                    <li>Organisation for Economic Co-operation and Development</li>
+                </ul>
+            </section>
+
+            <!-- Social Media Section -->
+            <section class="footer-section">
+                <h3>SOCIAL MEDIA</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>© 2026 Zambia Revenue Authority. All rights reserved</p>
+            <div class="social-icons-bottom">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
